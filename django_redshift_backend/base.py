@@ -759,6 +759,7 @@ class DatabaseSchemaEditor(BasePGDatabaseSchemaEditor):
                     "changes": self.sql_alter_column_type % {
                         "column": self.quote_name(new_field.column),
                         "type": new_type,
+                        "collation": "",
                     }
                 },
                 []
